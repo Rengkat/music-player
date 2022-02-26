@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SongListTemp from "./SongListTemp";
+
 import {
   faPlay,
   faPause,
@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function PlayerControls({ isPlaying, setIsPlaying, skipSong, skipBack }) {
+  // const [showMusicList, setShowMusicList] = useState(false);
   return (
     <div className="playerControl">
       <div className="mainControl">
@@ -41,7 +42,9 @@ function PlayerControls({ isPlaying, setIsPlaying, skipSong, skipBack }) {
         <button>
           <FontAwesomeIcon icon={faHeart} />
         </button>
-        <button></button>
+        <button>
+          <FontAwesomeIcon icon={faSearch} />
+        </button>
       </div>
     </div>
   );

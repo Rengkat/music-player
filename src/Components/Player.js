@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect, useRef } from "react";
 import PlayerControls from "./PlayerControls";
 import PlayerDetails from "./PlayerDetails";
-import SongListTemp from "./SongListTemp";
 
 function Player({ songs, currentSongdIndex, setCurrentSongdIndex }) {
   const audioEl = useRef(null);
@@ -50,7 +49,7 @@ function Player({ songs, currentSongdIndex, setCurrentSongdIndex }) {
         skipSong={skipSong}
         skipBack={skipBack}
       />
-      <SongListTemp songs={songs} />
+      {/* <SongListTemp songs={songs} /> */}
       {/* more controls */}
     </div>
   );
